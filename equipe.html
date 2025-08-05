@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe - Black Star Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.about-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.about-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.about-photo img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.about-photo img:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform: scale(1.07);
+}
+.about-title {
+    margin-top: 8px;
+    font-size: 1.05rem;
+    color: #0077ff;
+    text-align: center;
+    font-weight: 500;
+}
+.equipe-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+}
+.equipe-modal-content {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 35px;
+    max-width: 420px;
+    width: 90vw;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+    animation: modalIn 0.25s;
+}
+@keyframes modalIn {
+    from { transform: scale(0.85); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+.equipe-modal-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+.equipe-modal-content .about-title {
+    font-size: 1.2rem;
+    color: #0077ff;
+    margin-bottom: 0;
+}
+.equipe-modal-close {
+    position: absolute;
+    top: 12px; right: 18px;
+    font-size: 2rem;
+    color: #0077ff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.equipe-modal-close:hover {
+    color: #ff0033;
+}
+    </style>
+</head>
+<body>
+    <!-- ...navbar identique à index.html... -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.jpg" alt="Logo Black Star Academy" class="logo-img">
+            <a href="index.html" style="text-decoration:none;color:inherit;"><span>Black_Star_Academy</span></a>
+        </div>
+        <div class="navbar-burger" id="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#apropos">À propos</a></li>
+            
+            <li class="dropdown"><a href="equipe.html">Equipes </a></li>
+            <li class="dropdown">
+                <a href="activite.html">Services</a>
+               
+            </li>
+            <li class="dropdown">
+                <a href="formation.html">Formation </a>
+                
+            </li>
+            <li class="dropdown">
+                <a href="album.html">Production </a>
+            </li>
+            <li><a href="discusion.html">Discussion</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" style="margin:18px 0 0 18px;">🌙</button>
+  
+          
+<section class="about" id="apropos">
+    <h2>Nos Equipes</h2>
+    <div class="about-content">
+        <p>
+            <strong>Black Star Academy</strong> est un groupe dynamique dédié à la promotion de la danse urbaine, notamment le hip-hop, auprès des jeunes et passionnés.
+        </p>
+        <div class="about-gallery">
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0007.jpg" alt="Danse Black Star Academy" data-title="Danse Black Star Academy">
+                <div class="about-title">Danse Black Star Academy</div>
+            </div><br>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0008.jpg" alt="Groupe Black Star Academy" data-title="Groupe Black Star Academy">
+                <div class="about-title">Groupe Black Star Academy</div>
+            </div>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0014.jpg" alt="Ambiance Black Star Academy" data-title="Ambiance Black Star Academy">
+                <div class="about-title">Ambiance Black Star Academy</div>
+            </div>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0010.jpg" alt="Événement Black Star Academy" data-title="Événement Black Star Academy">
+                <div class="about-title">Événement Black Star Academy</div>
+            </div>
+        </div>
+    </div>
+</section>        
+            <!-- Les cartes équipe seront injectées ici -->
+        </div>
+    </div>
+    <!-- ...footer identique à index.html... -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#apropos">À propos</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="discusion.html">Discussion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100084826891532">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@blackstaracademy903/shorts">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="//mail.google.com/mail/?view=cm&fs=1&to=twambapo@gmail.com">twambapo@gmail.com</a></li>
+                    <li><a href="https://wa.me/+237697404179?text= besoinn de savoir plus svp">whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Design by <strong>emmanuel.dev</strong> &copy; 2025</span>
+        </div>
+    </footer>
+    <div id="equipe-modal" class="equipe-modal">
+    <div class="equipe-modal-content" id="equipe-modal-content">
+        <span class="equipe-modal-close" id="equipe-modal-close">&times;</span>
+    </div>
+</div>
+    <script>
+document.querySelectorAll('.about-photo img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        const modal = document.getElementById('equipe-modal');
+        const modalContent = document.getElementById('equipe-modal-content');
+        const title = img.getAttribute('data-title') || img.alt;
+        modalContent.innerHTML = `
+            <span class="equipe-modal-close" id="equipe-modal-close">&times;</span>
+            <img src="${img.src}" alt="${img.alt}">
+            <div class="about-title">${title}</div>
+        `;
+        modal.style.display = 'flex';
+        document.getElementById('equipe-modal-close').onclick = function() {
+            modal.style.display = 'none';
+        };
+        modal.onclick = function(event) {
+            if(event.target === modal) modal.style.display = 'none';
+        };
+    });
+});
+</script>
+    </body>
+</html>

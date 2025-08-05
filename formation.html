@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe - Black Star Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ...navbar identique à index.html... -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.jpg" alt="Logo Black Star Academy" class="logo-img">
+            <a href="index.html" style="text-decoration:none;color:inherit;"><span>Black_Star_Academy</span></a>
+        </div>
+        <div class="navbar-burger" id="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#apropos">À propos</a></li>
+           
+            <li class="dropdown"><a href="equipe.html">Equipes </a></li>
+            <li class="dropdown">
+                <a href="activite.html">Service </a>
+               
+            </li>
+            <li class="dropdown">
+                <a href="formation.html">Formation </a>
+
+            </li>
+          
+           
+            <li><a href="discusion.html">Discussion</a></li>
+             <li><a href=""></a></li>
+              <li><a href=""></a></li>
+               <li><a href=""></a></li>
+            
+           
+        </ul>
+    </nav>
+    <br><<button id="theme-toggle" class="theme-toggle" style="margin:18px 0 0 18px;">🌙</button>
+    <div class="equipe-container">
+        <center><h2>Nos Formation</h2></center>
+        <div class="formation-pub-container" style="max-width:1000px;margin:auto;">
+            <div class="formation-list" id="formation-list">
+                <!-- 10 publications de formation -->
+                <div class="formation-card" data-title="Hip-Hop Débutant" data-desc="Apprenez les bases du hip-hop avec nos coachs expérimentés." data-photo="image/formation1.jpg">
+                    <img src="image/IMG-20250804-WA0007.jpg" alt="Hip-Hop Débutant">
+                    <h4>Hip-Hop Débutant</h4>
+                </div>
+                <div class="formation-card" data-title="Breakdance" data-desc="Maîtrisez les mouvements acrobatiques du breakdance." data-photo="image/formation2.jpg">
+                    <img src="image/IMG-20250804-WA0007.jpg" alt="Breakdance">
+                    <h4>Breakdance</h4>
+                </div>
+                <div class="formation-card" data-title="Street Jazz" data-desc="Fusionnez jazz et danse urbaine pour un style unique." data-photo="image/formation3.jpg">
+                    <img src="image/IMG-20250804-WA0008.jpg" alt="Street Jazz">
+                    <h4>Street Jazz</h4>
+                </div>
+                <div class="formation-card" data-title="Afro Dance" data-desc="Découvrez les rythmes et mouvements de la danse africaine." data-photo="image/formation4.jpg">
+                    <img src="image/IMG-20250804-WA0009.jpg" alt="Afro Dance">
+                    <h4>Afro Dance</h4>
+                </div>
+                <div class="formation-card" data-title="Popping" data-desc="Apprenez la technique du popping pour impressionner sur scène." data-photo="image/formation5.jpg">
+                    <img src="image/IMG-20250804-WA0010.jpg" alt="Popping">
+                    <h4>Popping</h4>
+                </div>
+                <div class="formation-card" data-title="Locking" data-desc="Maîtrisez le locking, style funky et dynamique." data-photo="image/formation6.jpg">
+                    <img src="image/IMG-20250804-WA0011.jpg" alt="Locking">
+                    <h4>Locking</h4>
+                </div>
+                <div class="formation-card" data-title="Dancehall" data-desc="Initiez-vous aux bases et chorégraphies du dancehall." data-photo="image/formation7.jpg">
+                    <img src="image/IMG-20250804-WA0012.jpg" alt="Dancehall">
+                    <h4>Dancehall</h4>
+                </div>
+                <div class="formation-card" data-title="Krump" data-desc="Exprimez votre énergie avec le style puissant du krump." data-photo="image/formation8.jpg">
+                    <img src="image/IMG-20250804-WA0013.jpg" alt="Krump">
+                    <h4>Krump</h4>
+                </div>
+                <div class="formation-card" data-title="Freestyle" data-desc="Développez votre créativité et improvisation en freestyle." data-photo="image/formation9.jpg">
+                    <img src="image/IMG-20250804-WA0014.jpg" alt="Freestyle">
+                    <h4>Freestyle</h4>
+                </div>
+                <div class="formation-card" data-title="Chorégraphie Avancée" data-desc="Perfectionnez vos chorégraphies avec nos experts." data-photo="image/formation10.jpg">
+                    <img src="image/IMG-20250804-WA0015.jpg" alt="Chorégraphie Avancée">
+                    <h4>Chorégraphie Avancée</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Modale pour afficher la formation en grand -->
+        <div id="formation-modal" class="formation-modal">
+            <div class="formation-modal-content" id="formation-modal-content">
+                <span class="formation-modal-close" id="formation-modal-close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <!-- ...footer identique à index.html... -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#apropos">À propos</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="discusion.html">Discussion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100084826891532">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@blackstaracademy903/shorts">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="//mail.google.com/mail/?view=cm&fs=1&to=twambapo@gmail.com">twambapo@gmail.com</a></li>
+                    <li><a href="https://wa.me/+237697404179?text= besoinn de savoir plus svp">whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Design by <strong>emmanuel.dev</strong> &copy; 2025</span>
+        </div>
+    </footer>
+    <style>
+.formation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+.formation-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1px solid #eee;
+}
+.formation-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px) scale(1.03);
+}
+.formation-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+.formation-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0077ff;
+    text-align: center;
+}
+.formation-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+}
+.formation-modal-content {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 35px;
+    max-width: 420px;
+    width: 90vw;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+    animation: modalIn 0.25s;
+}
+@keyframes modalIn {
+    from { transform: scale(0.85); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+.formation-modal-content img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+.formation-modal-content h4 {
+    font-size: 1.25rem;
+    color: #0077ff;
+    margin-bottom: 10px;
+}
+.formation-modal-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0;
+}
+.formation-modal-close {
+    position: absolute;
+    top: 12px; right: 18px;
+    font-size: 2rem;
+    color: #0077ff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.formation-modal-close:hover {
+    color: #ff0033;
+}
+</style>
+<script>
+document.querySelectorAll('.formation-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+        const modal = document.getElementById('formation-modal');
+        const modalContent = document.getElementById('formation-modal-content');
+        const title = card.getAttribute('data-title');
+        const desc = card.getAttribute('data-desc');
+        const photo = card.getAttribute('data-photo');
+        modalContent.innerHTML = `
+            <span class="formation-modal-close" id="formation-modal-close">&times;</span>
+            <img src="${photo}" alt="${title}">
+            <h4>${title}</h4>
+            <p>${desc}</p>
+        `;
+        modal.style.display = 'flex';
+        document.getElementById('formation-modal-close').onclick = function() {
+            modal.style.display = 'none';
+        };
+        modal.onclick = function(event) {
+            if(event.target === modal) modal.style.display = 'none';
+        };
+    });
+});
+</script>
+</body>
+</html>

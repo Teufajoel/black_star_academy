@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black star</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+  
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.jpg" alt="Logo Black Star Academy" class="logo-img">
+            <span>Black_Star_Academy</span>
+        </div>
+        <div class="navbar-burger" id="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+          
+            <li class="dropdown">
+                <a href="equipe.html">Equipes</a>
+               
+            </li>
+            <li class="dropdown">
+                <a href="activite.html">Services</a>
+
+            </li>
+            <li class="dropdown">
+                <a href="formation.html">Formation </a>
+
+            </li>
+           
+                
+              
+            
+            <li><a href="discusion.html">Discussion</a></li>
+            
+        </ul>
+    </nav>
+<section class="hero" id="hero">
+    <div class="carousel-full" id="carousel-full">
+        <img class="carousel-full-media" src="logo.jpg" alt="Danse Black Star Academy" />
+        <img class="carousel-full-media" src="image/IMG-20250804-WA0014.jpg" alt="Groupe Black Star Academy" />
+        <img class="carousel-full-media" src="image/IMG-20250804-WA0025.jpg" alt="Ambiance Black Star Academy" />
+        <img class="carousel-full-media" src="image/IMG-20250804-WA0010.jpg" alt="Événement Black Star Academy" />
+        <div class="hero-title">
+            <h1>Bienvenue chez <span class="highlight">BLACK_Star_Academy</span></h1>
+        </div>
+    </div>
+</section>
+<!-- Modal plein écran pour les stories YouTube -->
+<div id="yt-story-modal" class="news-story-modal" style="display:none;">
+    <div class="news-story-modal-content" id="yt-story-modal-content"></div>
+    <button class="news-story-modal-close" id="yt-story-modal-close">&times;</button>
+</div>
+
+<!-- Section Nouvelles Publications façon stories Facebook -->
+<section class="news-stories-section" id="news-stories-section">
+    <h2 class="news-stories-title">Nouvelles publications</h2>
+    <div style="display:flex;gap:1rem;margin:0 2vw 1rem 2vw;flex-wrap:wrap;">
+        <!-- Le bouton "Effacer toutes les stories" a été retiré -->
+        <button id="news-demo-btn" class="news-demo-btn">Ajouter 10 stories de démo</button>
+    </div>
+    <form id="news-upload-form" class="news-upload-form">
+        <input type="file" id="news-media-input" accept="image/*,video/*" multiple style="display:none;" />
+        <button type="button" id="news-add-btn">Ajouter photo/vidéo</button>
+        <input type="text" id="news-caption-input" placeholder="Ajouter une légende..." maxlength="80" />
+        <button type="submit">Publier</button>
+    </form>
+    <div class="news-stories-carousel" id="news-stories-carousel">
+        <div class="news-stories-empty">Aucune publication pour le moment.</div>
+    </div>
+    <!-- Modal plein écran pour les stories -->
+    <div id="news-story-modal" class="news-story-modal" style="display:none;">
+        <div class="news-story-modal-content" id="news-story-modal-content"></div>
+        <button class="news-story-modal-close" id="news-story-modal-close">&times;</button>
+    </div>
+</section>
+</section>
+
+
+
+
+
+<section class="services" id="services">
+    <h2>Nos Services</h2>
+    <div class="services-list">
+        <div class="service-card">
+            <img src="image/IMG-20250804-WA0011.jpg" alt="Cours de danse" />
+            <h3>Cours de danse</h3>
+            <p>Des cours de hip-hop, breakdance, afro et autres styles urbains pour tous les âges et niveaux, animés par des professeurs passionnés.</p>
+        </div>
+        <div class="service-card">
+            <img src="image/IMG-20250804-WA0012.jpg" alt="Ateliers & Stages" />
+            <h3>Ateliers & Stages</h3>
+            <p>Des ateliers ponctuels et des stages intensifs pour découvrir de nouveaux styles, se perfectionner et rencontrer des artistes invités.</p>
+        </div>
+        <div class="service-card">
+            <img src="image/IMG-20250804-WA0013.jpg" alt="Événements & Shows" />
+            <h3>Événements & Shows</h3>
+            <p>Organisation de battles, spectacles, animations et participations à des festivals pour promouvoir la culture urbaine.</p>
+        </div>
+        <div class="service-card">
+            <img src="image/IMG-20250804-WA0022.jpg" alt="Coaching & Team Building" />
+            <h3>Coaching & Team Building</h3>
+            <p>Accompagnement personnalisé, coaching de groupes et interventions en entreprise pour renforcer l’esprit d’équipe par la danse.</p>
+        </div>
+    </div>
+</section>
+</section>
+
+<section class="about" id="apropos">
+    <h2>À propos</h2>
+    <div class="about-content">
+        <p>
+            <strong>Black Star Academy</strong> est un groupe dynamique dédié à la promotion de la danse urbaine, notamment le hip-hop, auprès des jeunes et passionnés. Fondée par des artistes engagés, l'académie propose des cours, des ateliers, des événements et des spectacles pour valoriser la culture urbaine et encourager l'expression artistique. Sur Facebook, Black Star Academy partage régulièrement ses actualités, ses performances, et met en avant la diversité, la créativité et l'esprit de famille qui anime la communauté. Rejoignez-nous pour vivre la passion de la danse et découvrir un univers où chaque talent a sa place !
+        </p>
+        <div class="about-gallery">
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0007.jpg" alt="Danse Black Star Academy">
+            </div>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0008.jpg" alt="Groupe Black Star Academy">
+            </div>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0014.jpg" alt="Ambiance Black Star Academy">
+            </div>
+            <div class="about-photo">
+                <img src="image/IMG-20250804-WA0010.jpg" alt="Événement Black Star Academy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p class="contact-slogan">"Black Star Academy : Unis par la passion, révélons nos talents !"</p>
+    <form class="contact-form" action="mailto:twambapo@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="nom" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <textarea name="message" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+<section class="localisation" id="localisation" style="margin:40px 0;">
+    <h2 style="text-align:center;color:#0077ff;">Localisation de Black_Star_Academy</h2>
+    <div style="width:100%;max-width:100vw;position:relative;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.342013449814!2d13.6555!3d4.5833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQ29sbGVnZSBiaWxpbmd1ZSB0ZXJyZW5zdHJhLCBOa29sYmlrb24sIEJlcnRvdWEgQ2FtZXJvdW4!5e0!3m2!1sfr!2sfr!4v1718030000000!5m2!1sfr!2sfr"
+            width="100%" height="320" style="border-radius:12px;border:1px solid #bbb;display:block;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div style="position:absolute;top:55%;left:52%;transform:translate(-50%,-100%);z-index:2;">
+            <span style="background:#0077ff;color:#fff;padding:6px 14px;border-radius:18px;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.13);font-size:1rem;">
+                📍 Collège bilingue Terrenstra
+            </span>
+        </div>
+    </div>
+    <div style="width:100%;max-width:700px;margin:24px auto 0 auto;text-align:center;">
+        <p>
+            <strong>Adresse :</strong><br>
+            Collège bilingue Terrenstra,<br>
+            Quartier Nkolbikon, Bertoua<br>
+            Cameroun
+        </p>
+        <p>
+            <strong>Numéro pour joindre :</strong><br>
+            <a href="tel:+237697404179" style="color:#0077ff;font-weight:bold;">+237 697 404 179</a>
+        </p>
+    </div>
+</section>
+ <!-- ...footer identique à index.html... -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#apropos">À propos</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="discusion.html">Discussion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100084826891532">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@blackstaracademy903/shorts">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="//mail.google.com/mail/?view=cm&fs=1&to=twambapo@gmail.com">twambapo@gmail.com</a></li>
+                    <li><a href="https://wa.me/+237697404179?text= besoinn de savoir plus svp">whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Design by <strong>emmanuel.dev</strong> &copy; 2025</span>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script>
+// Ajouter 10 stories de démo à la demande
+const newsDemoBtn = document.getElementById('news-demo-btn');
+if (newsDemoBtn) {
+    newsDemoBtn.onclick = function() {
+        const demoStories = [
+            {type:'image', url:'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80', caption:'Danse en équipe', date: new Date().toISOString()},
+            {type:'image', url:'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80', caption:'Ambiance urbaine', date: new Date().toISOString()},
+            {type:'image', url:'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80', caption:'Performance live', date: new Date().toISOString()},
+            {type:'image', url:'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80', caption:'Événement Black Star', date: new Date().toISOString()},
+            {type:'image', url:'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80', caption:'Cours de danse', date: new Date().toISOString()},
+            {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Battle freestyle', date: new Date().toISOString()},
+            {type:'video', url:'https://www.w3schools.com/html/movie.mp4', caption:'Stage intensif', date: new Date().toISOString()},
+            {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Session training', date: new Date().toISOString()},
+            {type:'video', url:'https://www.w3schools.com/html/movie.mp4', caption:'Showcase', date: new Date().toISOString()},
+            {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Team building', date: new Date().toISOString()}
+        ];
+        const stories = getNewsStories();
+        setNewsStories(stories.concat(demoStories));
+        renderNewsStories();
+    };
+}
+// --- Nouvelles publications façon stories Facebook ---
+const newsAddBtn = document.getElementById('news-add-btn');
+const newsMediaInput = document.getElementById('news-media-input');
+const newsUploadForm = document.getElementById('news-upload-form');
+const newsCaptionInput = document.getElementById('news-caption-input');
+const newsStoriesCarousel = document.getElementById('news-stories-carousel');
+
+function getNewsStories() {
+    return JSON.parse(localStorage.getItem('bsaNewsStories') || '[]');
+}
+function setNewsStories(stories) {
+    localStorage.setItem('bsaNewsStories', JSON.stringify(stories));
+}
+const newsStoryModal = document.getElementById('news-story-modal');
+const newsStoryModalContent = document.getElementById('news-story-modal-content');
+const newsStoryModalClose = document.getElementById('news-story-modal-close');
+
+function renderNewsStories() {
+    const stories = getNewsStories();
+    newsStoriesCarousel.innerHTML = '';
+    if (!stories.length) {
+        newsStoriesCarousel.innerHTML = '<div class="news-stories-empty">Aucune publication pour le moment.</div>';
+        return;
+    }
+    stories.slice().reverse().forEach((story, idx) => {
+        const div = document.createElement('div');
+        div.className = 'news-story-item';
+        let mediaHtml = '';
+        if (story.type === 'image') {
+            mediaHtml = `<img src="${story.url}" class="news-story-media" alt="Publication" />`;
+        } else if (story.type === 'video') {
+            mediaHtml = `<video src="${story.url}" class="news-story-media" controls preload="metadata"></video>`;
+        }
+        div.innerHTML = `
+            <div class="news-story-media-wrapper">${mediaHtml}</div>
+            <div class="news-story-caption">${story.caption || ''}</div>
+`;
+        // Plein écran au clic
+        div.querySelector('.news-story-media').addEventListener('click', function(e) {
+            e.stopPropagation();
+            let modalMedia;
+            if (story.type === 'image') {
+                modalMedia = document.createElement('img');
+                modalMedia.src = story.url;
+                modalMedia.alt = 'Publication';
+                modalMedia.style.maxWidth = '90vw';
+                modalMedia.style.maxHeight = '80vh';
+            } else if (story.type === 'video') {
+                modalMedia = document.createElement('video');
+                modalMedia.src = story.url;
+                modalMedia.controls = true;
+                modalMedia.autoplay = true;
+                modalMedia.muted = false;
+                modalMedia.volume = 1;
+                modalMedia.style.maxWidth = '90vw';
+                modalMedia.style.maxHeight = '80vh';
+            }
+            newsStoryModalContent.innerHTML = '';
+            newsStoryModalContent.appendChild(modalMedia);
+            newsStoryModal.style.display = 'flex';
+            if (modalMedia && modalMedia.tagName === 'VIDEO') {
+                function tryUnmute() {
+                    modalMedia.muted = false;
+                    modalMedia.volume = 1;
+                    modalMedia.focus();
+                    modalMedia.play().catch(()=>{});
+                }
+                setTimeout(tryUnmute, 100);
+                setTimeout(tryUnmute, 400);
+                setTimeout(tryUnmute, 1000);
+                modalMedia.addEventListener('canplay', function handler() {
+                    modalMedia.muted = false;
+                    modalMedia.volume = 1;
+                    modalMedia.play().catch(()=>{});
+                    modalMedia.removeEventListener('canplay', handler);
+                });
+            }
+        });
+        // Suppression individuelle
+        div.querySelector('.news-story-delete-btn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (confirm('Supprimer cette story ?')) {
+                // L'index doit être recalculé car on inverse l'ordre d'affichage
+                const realIdx = stories.length - 1 - idx;
+                stories.splice(realIdx, 1);
+                setNewsStories(stories);
+                renderNewsStories();
+            }
+        });
+        newsStoriesCarousel.appendChild(div);
+    });
+}
+// Effacer toutes les stories
+const newsClearBtn = document.getElementById('news-clear-btn');
+if (newsClearBtn) {
+    newsClearBtn.onclick = function() {
+        if (confirm('Voulez-vous vraiment effacer toutes les stories ?')) {
+            setNewsStories([]);
+            renderNewsStories();
+        }
+    };
+}
+newsStoryModalClose.onclick = function() {
+    newsStoryModal.style.display = 'none';
+    newsStoryModalContent.innerHTML = '';
+};
+newsStoryModal.onclick = function(e) {
+    if (e.target === newsStoryModal) {
+        newsStoryModal.style.display = 'none';
+        newsStoryModalContent.innerHTML = '';
+    }
+};
+newsAddBtn.onclick = () => newsMediaInput.click();
+newsUploadForm.onsubmit = function(e) {
+    e.preventDefault();
+    const files = newsMediaInput.files;
+    const caption = newsCaptionInput.value.trim();
+    if (!files.length) {
+        alert('Veuillez sélectionner une photo ou une vidéo.');
+        return;
+    }
+    const stories = getNewsStories();
+    Array.from(files).forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function(ev) {
+            const url = ev.target.result;
+            const type = file.type.startsWith('image') ? 'image' : 'video';
+            stories.push({url, type, caption, date: new Date().toISOString()});
+            setNewsStories(stories);
+            renderNewsStories();
+        };
+        reader.readAsDataURL(file);
+    });
+    newsMediaInput.value = '';
+    newsCaptionInput.value = '';
+};
+// Injecter 10 stories de démo si aucune n'existe déjà
+if (!localStorage.getItem('bsaNewsStories') || JSON.parse(localStorage.getItem('bsaNewsStories')).length === 0) {
+    const demoStories = [
+        {type:'image', url:'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80', caption:'Danse en équipe', date: new Date().toISOString()},
+        {type:'image', url:'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80', caption:'Ambiance urbaine', date: new Date().toISOString()},
+        {type:'image', url:'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80', caption:'Performance live', date: new Date().toISOString()},
+        {type:'image', url:'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80', caption:'Événement Black Star', date: new Date().toISOString()},
+        {type:'image', url:'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80', caption:'Cours de danse', date: new Date().toISOString()},
+        {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Battle freestyle', date: new Date().toISOString()},
+        {type:'video', url:'https://www.w3schools.com/html/movie.mp4', caption:'Stage intensif', date: new Date().toISOString()},
+        {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Session training', date: new Date().toISOString()},
+        {type:'video', url:'https://www.w3schools.com/html/movie.mp4', caption:'Showcase', date: new Date().toISOString()},
+        {type:'video', url:'https://www.w3schools.com/html/mov_bbb.mp4', caption:'Team building', date: new Date().toISOString()}
+    ];
+    localStorage.setItem('bsaNewsStories', JSON.stringify(demoStories));
+}
+renderNewsStories();
+// Thème sombre/clair
+const themeBtn = document.getElementById('theme-toggle');
+const root = document.documentElement;
+function setTheme(dark) {
+    if (dark) {
+        root.classList.add('dark-theme');
+        themeBtn.textContent = '☀️';
+    } else {
+        root.classList.remove('dark-theme');
+        themeBtn.textContent = '🌙';
+    }
+    localStorage.setItem('bsaTheme', dark ? 'dark' : 'light');
+}
+themeBtn.onclick = () => setTheme(!root.classList.contains('dark-theme'));
+if (localStorage.getItem('bsaTheme') === 'dark') setTheme(true);
+
+// Stories YouTube Black Star Academy
+const storiesCarousel = document.getElementById('stories-carousel');
+const ytStoryModal = document.getElementById('yt-story-modal');
+const ytStoryModalContent = document.getElementById('yt-story-modal-content');
+const ytStoryModalClose = document.getElementById('yt-story-modal-close');
+async function fetchYouTubeStories() {
+    // Utilisation d'un service tiers pour récupérer les vidéos (ex: rss2json)
+    const rssUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCkQw5J5QnKQwZ0pQfM9vK1A';
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+    try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        if (!data.items || !data.items.length) throw new Error('Aucune vidéo trouvée');
+        const videos = data.items.slice(0, 10);
+        storiesCarousel.innerHTML = '';
+        for (const video of videos) {
+            // Extraire l'ID vidéo
+            const match = video.link.match(/v=([\w-]+)/) || video.link.match(/youtu.be\/([\w-]+)/);
+            const videoId = match ? match[1] : null;
+            if (!videoId) continue;
+            const story = document.createElement('div');
+            story.className = 'story-item';
+            story.innerHTML = `
+                <div class="story-video-wrapper">
+                    <iframe class="story-video" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0&autoplay=0&mute=1" allow="autoplay; encrypted-media" allowfullscreen frameborder="0"></iframe>
+                    <div class="story-overlay"><svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#fff" opacity="0.7"/><polygon points="13,10 24,16 13,22" fill="#222"/></svg></div>
+                </div>
+                <div class="story-title">${video.title}</div>
+            `;
+            // Lecture automatique au survol ou clic
+            let playing = false;
+            function playStory() {
+                if (!playing) {
+                    story.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                    story.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"unMute","args":""}', '*');
+                    playing = true;
+                }
+            }
+            function pauseStory() {
+                if (playing) {
+                    story.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                    playing = false;
+                }
+            }
+            story.addEventListener('mouseenter', playStory);
+            story.addEventListener('mouseleave', pauseStory);
+            // Lecture en plein écran au clic sur le wrapper vidéo (pas juste l'iframe)
+            story.querySelector('.story-video-wrapper').addEventListener('click', function(e) {
+                e.stopPropagation();
+                ytStoryModalContent.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen frameborder="0" style="width:90vw;max-width:900px;height:50vw;max-height:80vh;"></iframe>`;
+                ytStoryModal.style.display = 'flex';
+            });
+            story.addEventListener('click', playStory);
+            storiesCarousel.appendChild(story);
+        }
+    } catch (e) {
+        storiesCarousel.innerHTML = '<div class="stories-error">Impossible de charger les stories YouTube.</div>';
+    }
+}
+ytStoryModalClose.onclick = function() {
+    ytStoryModal.style.display = 'none';
+    ytStoryModalContent.innerHTML = '';
+};
+ytStoryModal.onclick = function(e) {
+    if (e.target === ytStoryModal) {
+        ytStoryModal.style.display = 'none';
+        ytStoryModalContent.innerHTML = '';
+    }
+};
+fetchYouTubeStories();
+</script>
+<style>
+/* Modal plein écran pour les stories */
+.news-story-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.news-story-modal-content {
+    max-width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-story-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 36px;
+    font-size: 2.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    transition: color 0.2s;
+}
+.news-story-modal-close:hover {
+    color: #ff9800;
+}
+/* --- Stories YouTube --- */
+.stories-section {
+    width: 100vw;
+    max-width: 100%;
+    background: #fff;
+    padding: 1.5rem 0 1rem 0;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+}
+.dark-theme .stories-section {
+    background: #181818;
+}
+.stories-title {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-left: 2.5vw;
+    margin-bottom: 0.7rem;
+    color: var(--primary-color, #222);
+}
+.stories-carousel {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding: 0 2vw;
+    scroll-snap-type: x mandatory;
+}
+.story-item {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+    scroll-snap-align: start;
+    position: relative;
+    transition: box-shadow 0.2s;
+}
+.dark-theme .story-item {
+    background: #232323;
+}
+.story-video-wrapper {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    margin-bottom: 0.5rem;
+}
+.story-video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background: #000;
+}
+.story-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.story-title {
+    font-size: 0.98rem;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: var(--primary-color, #222);
+    min-height: 2.2em;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.stories-loading, .stories-error {
+    color: #888;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+@media (max-width: 700px) {
+    .story-item { flex-basis: 70vw; max-width: 80vw; }
+    .story-video-wrapper { width: 60vw; height: 34vw; min-width: 120px; min-height: 68px; }
+    .story-title { max-width: 90vw; }
+}
+/* --- Nouvelles publications façon stories Facebook --- */
+.news-stories-section {
+    width: 100vw;
+    max-width: 100%;
+    background: #f9f9f9;
+    padding: 1.5rem 0 1rem 0;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    border-bottom: 1px solid #eee;
+}
+.dark-theme .news-stories-section {
+    background: #232323;
+    border-bottom: 1px solid #333;
+}
+.news-stories-title {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-left: 2.5vw;
+    margin-bottom: 0.7rem;
+    color: var(--primary-color, #222);
+}
+.news-upload-form {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    margin: 0 2vw 1rem 2vw;
+    flex-wrap: wrap;
+}
+.news-upload-form button, .news-upload-form input[type="text"] {
+    font-size: 1rem;
+    padding: 0.4em 0.8em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    outline: none;
+}
+.news-upload-form button {
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.news-upload-form button:hover {
+    background: #ff9800;
+    color: #222;
+}
+.news-upload-form input[type="text"] {
+    min-width: 180px;
+    max-width: 300px;
+    border: 1px solid #bbb;
+}
+.news-stories-carousel {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding: 0 2vw;
+    scroll-snap-type: x mandatory;
+}
+.news-story-item {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+    scroll-snap-align: start;
+    position: relative;
+    transition: box-shadow 0.2s;
+}
+.dark-theme .news-story-item {
+    background: #181818;
+}
+.news-story-media-wrapper {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-story-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    display: block;
+    background: #000;
+}
+.news-story-caption {
+    font-size: 0.98rem;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: var(--primary-color, #222);
+    min-height: 2.2em;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news-stories-empty {
+    color: #888;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+@media (max-width: 700px) {
+    .news-story-item { flex-basis: 70vw; max-width: 80vw; }
+    .news-story-media-wrapper { width: 60vw; height: 34vw; min-width: 120px; min-height: 68px; }
+    .news-story-caption { max-width: 90vw; }
+}
+
+/* Réduction de la taille du bouton mode sombre/clair */
+.theme-toggle {
+    font-size: 0.85rem;
+    padding: 0.2em 0.7em;
+    border-radius: 6px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 100;
+    background: #fff;
+    color: #222;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.dark-theme .theme-toggle {
+    background: #232323;
+    color: #fff;
+    border: 1px solid #444;
+}
+.theme-toggle:hover {
+    background: #ff9800;
+    color: #222;
+}
+</style>
+}
+</style>
